@@ -1,0 +1,10 @@
+services:
+  pg:
+    image: bitnami/postgresql:latest
+    container_name: pg_container
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=next-saas
+    ports:
+      - "5432:5432"

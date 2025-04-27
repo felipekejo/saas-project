@@ -8,8 +8,8 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "prisma": "^6.6.0",
     "turbo": "^2.5.0"
-
   },
   "engines": {
     "node": ">=18"
