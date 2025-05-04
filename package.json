@@ -19,5 +19,9 @@
     "apps/*",
     "packages/*",
     "config/*"
-  ]
+  ],
+  "dependencies": {
+    "@fastify/swagger": "^9.5.0",
+    "@fastify/swagger-ui": "^5.2.2"
+  }
 }
