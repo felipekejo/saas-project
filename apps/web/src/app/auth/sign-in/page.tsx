@@ -27,6 +27,9 @@ export default function SignInPage() {
       <Button type="submit" className="w-full">
         Sign In with E-mail
       </Button>
+      <Button variant="link" className="w-full" size="sm" asChild>
+        <Link href="/auth/sign-up">Create a new account</Link>
+      </Button>
       <Separator />
       <Button variant="outline" className="w-full">
         <Image src={githubIcon} alt="" className="mr-2 size-4 dark:invert" />

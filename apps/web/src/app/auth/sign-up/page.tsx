@@ -33,7 +33,7 @@ export default function SignUpPage() {
       <Button type="submit" className="w-full">
         Create account
       </Button>
-      <Button variant="link" className="w-full" asChild>
+      <Button variant="link" className="w-full" size="sm" asChild>
         <Link href="/auth/sign-in">Already registered? Sign in</Link>
       </Button>
       <Separator />
