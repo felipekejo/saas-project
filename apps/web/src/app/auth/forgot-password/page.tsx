@@ -1,10 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-
 
 export default function ForgotPasswordPage() {
   return (
@@ -20,7 +18,6 @@ export default function ForgotPasswordPage() {
       <Button variant="link" className="w-full" size="sm" asChild>
         <Link href="/auth/sign-in">Sign in instead</Link>
       </Button>
-
     </form>
   )
 }

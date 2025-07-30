@@ -1,15 +1,21 @@
 'use server'
 
-import { api } from "@/http/api-client"
-import { signInWithPassword } from "@/http/sign-in-with-password"
+import { signInWithPassword } from '@/http/sign-in-with-password'
 
+export async function signInWithEmailAndPassword(
+  previousState: unknown,
+  data: FormData,
+) {
+  const { email, password } = Object.fromEntries(data)
 
+  await new Promise((resolve) => setTimeout(resolve, 1000))
 
-export async function signInWithEmailAndPassword(data:FormData){
-  const {email, password} = Object.fromEntries(data)
-
-  const result = await signInWithPassword({email:String(email), password:String(password)})
+  const result = await signInWithPassword({
+    email: String(email),
+    password: String(password),
+  })
 
   console.log(result)
 
+  return 'success'
 }
